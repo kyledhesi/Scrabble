@@ -1,0 +1,48 @@
+Game initialization:
+
+Ensure that the game board is empty at the start.
+Verify that both players have 7 random tiles in their racks.
+Confirm that the tile bag contains the correct number of remaining tiles (100 - (7 * 2)).
+
+Tile placement:
+
+Check that the first word is placed on the center square of the board.
+Test that words can only be placed horizontally or vertically.
+Ensure that newly placed tiles must connect with existing tiles on the board.
+Test that a single move cannot place tiles in both horizontal and vertical directions.
+Validate that placed tiles form valid words according to the game dictionary.
+
+Scoring:
+
+Verify that the scoring system calculates points correctly for each word.
+Test that the bonus squares (double letter, triple letter, double word, and triple word) function as expected.
+Confirm that a player receives a 50-point bonus for using all 7 tiles in their rack in a single turn (a "bingo").
+
+Tile exchange:
+
+Ensure that a player can exchange any number of their tiles with new ones from the tile bag.
+Confirm that exchanged tiles are removed from the player's rack and returned to the tile bag.
+Verify that a player's turn ends after exchanging tiles.
+
+Game flow:
+
+Test that turns alternate between players.
+Verify that a player can pass their turn without making a move.
+
+Game end conditions:
+
+Ensure that the game ends when all tiles are used and one player has no tiles remaining.
+Test that the game ends after both players pass their turn consecutively.
+Verify that the game calculates the final score correctly, including subtracting the sum of each player's remaining tiles from their score and adding that amount to the opponent's score.
+
+Error handling and user interface:
+
+Test that the game shows appropriate error messages for invalid moves.
+Confirm that the game interface updates correctly after each move.
+Verify that the game prevents users from making moves when it's not their turn.
+
+Edge cases:
+
+Test gameplay with the minimum and maximum length of words (2 and 15 letters).
+Check scenarios where the board has limited space for new words.
+Test situations where only a few tiles remain in the tile bag.
